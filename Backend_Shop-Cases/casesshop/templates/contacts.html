@@ -1,0 +1,152 @@
+{% extends 'base.html' %}
+{% block title %}Contact Page{% endblock %}
+{% block content %}
+{% load static%}
+
+
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="{% url 'home' %}" class="logo">
+        <img src="{% static './assets/images/sa.png' %}" width="70" height="50" alt="shoppie home">
+      </a>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li>
+            <a href="{% url 'home' %}" class="navbar-link">Основной</a>
+          </li>
+
+          <li>
+            <a href="{% url 'all-products' %}" class="navbar-link">Продукты</a>
+          </li>
+
+          <li>
+            <a href="{% url 'zakaz' %}" class="navbar-link">Разместить заказ</a>
+          </li>
+
+        </ul>
+
+
+        <a href="https://t.me/welkin_cases_bot" class="btn">Telegram bot</a>
+        <a href="{% url 'contact' %}" class="btn">Связь</a>
+      </nav>
+
+      <button class="nav-open-btn" aria-label="toggle menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+      </button>
+
+    </div>
+  </header>
+
+
+  <footer class="footer">
+    <div class="container">
+
+      <div class="footer-top">
+
+        <div class="footer-brand">
+
+          <a href="/index.html" class="logo">
+            <img src="{% static './assets/images/sa.png' %}" width="70" height="50" loading="lazy" alt="shoppie home">
+          </a>
+
+          <p class="footer-text">
+            Все товары идут через Китай.<br>
+            Без карго !
+          </p>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="https://t.me/Welkin_Cases" class="social-link">
+                  <ion-icon name="rocket-outline"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.instagram.com/welkin_cases/" class="social-link">
+                  <ion-icon name="rocket-outline"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title title">Связь</p>
+
+            <address class="footer-text">
+              Uzbekistan, Tashkent
+            </address>
+          </li>
+
+          <li>
+           <a class="email">wbusinesteam@gmail.com</a>
+          </li>
+
+          <li>
+            <a href="tel:+998 94 620-43-34" class="call">+998 94 620-43-34</a>
+            <a href="tel:+998 94 315-13-37" class="call">+998 94 315-13-37</a>
+            <a href="tel:+998 33 007-12-31" class="call">+998 33 007-12-31</a>
+          </li>
+
+        </ul>
+
+        <div class="footer-list">
+
+          <p class="footer-list-title title">Спросите желаемый товар</p>
+          <p class="footer-text">Спрашивайте товар нужного вам фасона и оставляйте свой номер телефона, о наличии придет смс </p><br>
+
+          <input type="text" name="Введите нужный вам продукт" placeholder="Введите нужный вам продукт" required autocomplete="off"
+            class="input-field">
+
+            <input type="number" name="+998 (xx) xxx xx xx" placeholder="+998 (xx) xxx xx xx" required autocomplete="off"
+            class="input-field">
+
+          <a href="https://t.me/Welkin_Cases"><button class="btn btn-secondary" >Отправлять</button></a>
+
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+
+        <div class="wrapper">
+          <div class="link-wrapper">
+
+            <a href="{% url 'home' %}" class="navbar-link">Основной</a>
+            <a href="{% url 'all-products' %}" class="navbar-link">Продукты</a>
+            <a href="{% url 'zakaz' %}" class="navbar-link">Разместить заказ</a>
+
+          </div>
+
+          <div class="link-wrapper">
+            <a href="https://t.me/Welkin_Cases" class="footer-bottom-link">Посмотреть продукты</a>
+          </div>
+        </div>
+
+        <p class="copyright" href="https://t.me/egamberdiyevsardor">
+          &copy; 2023 Разработано W-Team!
+        </p>
+
+      </div>
+
+      <img src="{% static './assets/images/footer-shape-1.png' %}" width="245" height="165" loading="lazy" alt="shape"
+        class="shape shape-1">
+
+      <img src="{% static './assets/images/footer-shape-2.png' %}" width="138" height="316" loading="lazy" alt="shape"
+        class="shape shape-2">
+
+      <img src="{% static './assets/images/footer-shape-3.png' %}" width="346" height="92" loading="lazy" alt="shape"
+        class="shape shape-3">
+
+    </div>
+  </footer>
+
+{% endblock %}
