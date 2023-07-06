@@ -15,7 +15,7 @@ Photo - Demo
 ![9](https://github.com/sardoregamberdiyev/Cases_Shop/blob/main/image_2023-05-31_21-38-24.png)
 
 # Admin-Panel
-Installed admin-panel,(Dashboard)
+Installed admin-panel (Dashboard)
 ```shell
 pip install django-jazzmin
 ```
